@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+}
+.GridWrapper_Home {
+
+    width: 100vw;
+    display: grid;
+    height: 100vh;
+   grid-template-areas:
+
+   "heH heH heH heH"
+   "s1H s1H s1H s1H"
+   "s2H s2H s2H s2H"
+   "s3H s3H s3H s3H"
+   "foH foH foH foH"
+;
+grid-template-columns:1fr 1fr 1fr;
+grid-template-rows: 1, 1, 1, 1, 1;
+grid-gap: 0px;
+
+
+}
+
+.header_Home {
+    grid-area: heH;
+    display: flex;
+    align-items: center;
+    
+}
+
+.footer_Home {
+    grid-area: foH;
+    background-size: 25%;
+}
+
+.section_1_Home {
+    grid-area: s1H;
+    background-size: 100%;
+    
+}
+
+.section_2_Home {
+    grid-area: s2H;
+    background-size: 100%;
+}
+
+.section_3_Home {
+    grid-area: s3H;
+    background-size: 100%;
+}
+
+.GridWrapper_about {
+
+    width: 100vw;
+    display: grid;
+    height: 100vh;
+    background-color: black;
+   grid-template-areas:
+
+   "hem hem hem hem"
+   "s1m s1m s1m s1m"
+   "s1m s1m s1m s1m"
+   "fom fom fom fom"
+;
+grid-template-columns:1fr 1fr 1fr;
+grid-template-rows: 80px 800px 800px 400px 65px;
+grid-gap: 4px;
+background-color: black;
+
+}
+
+.header_about {
+    grid-area: hem;
+    background: rgb(36, 28, 28);
+    height: 100px;
+    display: flex;
+
+    align-items: center; 
+    
+}
+
+.footer_about {
+    grid-area: fom;
+    background: rgb(36, 28, 28);
+    height: 400px;
+}
+
+.section_1_about {
+    grid-area: s1m;
+    background: black;
+    
+
+}
+
+
+.GridWrapper_Recs {
+
+    width: 100vw;
+    display: grid;
+    height: 100vh;
+    background-color: black;
+   grid-template-areas:
+
+   "heo heo heo heo"
+   "s1o s1o s1o s1o"
+   "s2o s2o s2o s2o"
+   "foo foo foo foo"
+;
+grid-template-columns:1fr 1fr 1fr;
+grid-template-rows: 80px 800px 800px 400px 65px;
+grid-gap: 4px;
+background-color: black;
+
+}
+
+.header_Recs {
+    grid-area: heo;
+    background: rgb(36, 28, 28);
+    height: 100px;
+    display: flex;
+
+    align-items: center;
+    
+}
+
+.footer_Recs {
+    grid-area: foo;
+    background-image:url(/WU_2A_ProjektHT21/img/matt-hoffman-72qDM1TA5p8-unsplash.jpg);
+}
+
+.section_1_Recs {
+    grid-area: s1o;
+    background-image:url(/WU_2A_ProjektHT21/img/matt-hoffman-AYdJM-HiSUM-unsplash.jpg);
+    background-size: 1670px;
+    
+}
+
+.section_2_Recs {
+    grid-area: s2o;
+    background-image:url(/WU_2A_ProjektHT21/img/matt-hoffman-72qDM1TA5p8-unsplash.jpg);
+    background-size: 1670px;
+}
