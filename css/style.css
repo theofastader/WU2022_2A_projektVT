@@ -9,6 +9,7 @@
    grid-template-areas:
 
    "heH heH heH heH"
+   "liH liH liH liH"
    "s1H s1H s1H s1H"
    "s2H s2H s2H s2H"
    "s3H s3H s3H s3H"
@@ -24,8 +25,24 @@ grid-gap: 0px;
 .header_Home {
     grid-area: heH;
     display: flex;
+    flex-direction: row;
     align-items: center;
+    justify-content: space-around;
+    list-style: none;
     
+}
+
+#link_list {
+    grid-area: liH;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+    align-items: center;
+    position: relative;
+    top: -60px;
+
+
 }
 
 .footer_Home {
@@ -54,44 +71,61 @@ grid-gap: 0px;
     width: 100vw;
     display: grid;
     height: 100vh;
-    background-color: black;
    grid-template-areas:
 
-   "hem hem hem hem"
-   "s1m s1m s1m s1m"
-   "s1m s1m s1m s1m"
-   "fom fom fom fom"
+   "hea hea hea hea"
+   "lia lia lia lia"
+   "s1a s1a s1a s1a"
+   "s2a s2a s2a s2a"
+   "s3a s3a s3a s3a"
+   "foa foa foa foa"
 ;
 grid-template-columns:1fr 1fr 1fr;
-grid-template-rows: 80px 800px 800px 400px 65px;
-grid-gap: 4px;
-background-color: black;
+grid-template-rows: 1, 1, 1, 1, 1;
+grid-gap: 0px;
 
 }
 
 .header_about {
-    grid-area: hem;
-    background: rgb(36, 28, 28);
-    height: 100px;
+    grid-area: hea;
     display: flex;
-
-    align-items: center; 
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
     
+}
+
+#link_list {
+    grid-area: lia;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+    align-items: center;
+    position: relative;
+    top: -60px;
 }
 
 .footer_about {
-    grid-area: fom;
-    background: rgb(36, 28, 28);
-    height: 400px;
+    grid-area: foa;
+    background-size: 25%;
 }
 
 .section_1_about {
-    grid-area: s1m;
-    background: black;
-    
-
+    grid-area: s1a;
+    background-size: 100%;
 }
-
+    
+.section_2_about {
+        grid-area: s2a;
+        background-size: 100%;
+}
+    
+.section_3_about {
+        grid-area: s3a;
+        background-size: 100%;
+}
 
 .GridWrapper_Recs {
 
@@ -107,7 +141,7 @@ background-color: black;
    "foo foo foo foo"
 ;
 grid-template-columns:1fr 1fr 1fr;
-grid-template-rows: 80px 800px 800px 400px 65px;
+grid-template-rows: 1, 1, 1, 1, 1;
 grid-gap: 4px;
 background-color: black;
 
