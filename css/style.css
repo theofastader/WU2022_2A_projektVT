@@ -24,13 +24,101 @@ grid-gap: 0px;
 
 .header_Home {
     grid-area: heH;
+    width: 1;
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
+    align-items: flex-end;
+    justify-content: center;
     list-style: none;
+
+
+        display: flex;
+        justify-content: space-between ;
+        align-items: flex-end;
+        height: 10vh;
+        background-color: rgb(83, 46, 3);
+        font-family: sans-serif;
+    }
+    #logga_img {
+        display: flex;
+        justify-content: space-around;
+        width: 110px;
+        height: 10vh;
+        align-items: center;
+        border-radius: 20%;
+
+
+    }
     
-}
+    #nav-links {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 50%;
+        background-color:rgb(83, 46, 3);
+        position: absolute;
+        right: 0px;
+        top: -90vh;
+        width: 180px;
+        list-style: none;
+        transition: all 0.5s;
+    }
+    
+    .nav-active {
+        transform: translateY(100vh);
+    }
+    
+    #nav-links a {
+        text-decoration: snow;
+        color: rgb(255, 255, 255);
+        letter-spacing: 0.4rem;
+        font-weight: bold;
+        font-size: 1.25rem;
+        text-transform: uppercase;
+        width: 180px;
+        height: 4rem;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    
+    #nav-links a:hover {
+        color: rgb(0, 0, 0);
+        background-color: rgb(255, 255, 255);
+        transition: ease 0.4s;
+    }
+    
+    .burger_line {
+        width: 50px;
+        justify-content: space-around;
+        height: 7px;
+        background-color: rgb(255, 255, 255);
+        margin: 7px;
+        margin-bottom: 20%;
+        border-radius: 20%;
+        transition: all 1s;
+    }
+    
+    .crossed_line #line_2 {
+        transform: rotate(90deg) translate(-5px, -6px);
+        
+    }
+    
+    .crossed_line #line_1 {
+        transform: rotate(110deg) translate(20px, 0px);
+    }
+    
+ 
+    
+    #burger {
+        margin-right: 62px;
+        cursor: pointer;
+
+    }
+
 
 #link_list {
     grid-area: liH;
@@ -46,24 +134,29 @@ grid-gap: 0px;
 }
 
 .footer_Home {
+    width:  100%;
     grid-area: foH;
     background-size: 25%;
 }
 
 .section_1_Home {
+    width: 100%;
     grid-area: s1H;
     background-size: 100%;
     
 }
 
 .section_2_Home {
+    width: 100%;
     grid-area: s2H;
     background-size: 100%;
 }
 
 .section_3_Home {
+    width: 100%;
     grid-area: s3H;
     background-size: 100%;
+    background-image: image()
 }
 
 .GridWrapper_about {
