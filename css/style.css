@@ -3,20 +3,21 @@
 }
 .GridWrapper_Home {
 
-    width: 100vw;
+    width: auto;
     display: grid;
-    height: 100vh;
+    height: auto;
    grid-template-areas:
 
    "heH heH heH heH"
-   "liH liH liH liH"
-   "s1H s1H s1H s1H"
-   "s2H s2H s2H s2H"
-   "s3H s3H s3H s3H"
+   "s0H s0H s0H s0H"
+   "s1H s1H s5H s5H"
+   "s2H s2H s6H s6H"
+   "s3H s3H s7H s7H"
+   "s4H s4H s8H s8H"
    "foH foH foH foH"
 ;
-grid-template-columns:1fr 1fr 1fr;
-grid-template-rows: 1, 1, 1, 1, 1;
+grid-template-rows: 10vh 200px 500px  500px 500px 500px 200px;
+grid-template-columns: 1fr 1fr 1fr 1fr;
 grid-gap: 0px;
 
 
@@ -36,7 +37,7 @@ grid-gap: 0px;
         justify-content: space-between ;
         align-items: flex-end;
         height: 10vh;
-        background-color: rgb(83, 46, 3);
+        background-color: rgb(41, 27, 11);
         font-family: sans-serif;
     }
     #logga_img {
@@ -56,13 +57,13 @@ grid-gap: 0px;
         justify-content: center;
         align-items: center;
         height: 50%;
-        background-color:rgb(83, 46, 3);
+        background-color:rgb(41, 27, 11);
         position: absolute;
         right: 0px;
         top: -90vh;
         width: 180px;
         list-style: none;
-        transition: all 0.5s;
+        transition: all 1s;
     }
     
     .nav-active {
@@ -82,6 +83,7 @@ grid-gap: 0px;
         text-align: center;
         justify-content: center;
         align-items: center;
+       
     
     }
     
@@ -92,12 +94,12 @@ grid-gap: 0px;
     }
     
     .burger_line {
-        width: 50px;
+        width: 45px;
         justify-content: space-around;
-        height: 7px;
+        height: 6.5px;
         background-color: rgb(255, 255, 255);
         margin: 7px;
-        margin-bottom: 20%;
+        margin-bottom: 15%;
         border-radius: 20%;
         transition: all 1s;
     }
@@ -108,7 +110,7 @@ grid-gap: 0px;
     }
     
     .crossed_line #line_1 {
-        transform: rotate(110deg) translate(20px, 0px);
+        transform: rotate(120deg) translate(10px, 0px);
     }
     
  
@@ -134,30 +136,249 @@ grid-gap: 0px;
 }
 
 .footer_Home {
-    width:  100%;
+    width: 100%;
     grid-area: foH;
-    background-size: 25%;
+    background-size: 100%;
+    background: rgb(75, 74, 74);
+    z-index: 1;
 }
-
+.section_0_Home {
+    width: 100%;
+    height: 100;
+    grid-area: s0H;
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+    #bokhylla_img{
+        position: absolute;
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        height: 350%;
+        align-items: center;
+        z-index: -2;
+    }
 .section_1_Home {
     width: 100%;
+    height: 100%;
     grid-area: s1H;
     background-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
     
 }
+    #PJO_nyhet_img{
+        position: absolute;
+        display: flex;
+        justify-content: space-around;
+        width: 270px;
+        height: 400px;
+        align-items: center;
+        border-radius: 1%;
+        border: black;
+    }
 
 .section_2_Home {
     width: 100%;
+    height: 100%;
     grid-area: s2H;
     background-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
+    #hearstopper_nyhet_img {
+        position: absolute;
+        display: flex;
+        justify-content: space-around;
+        width: 270px;
+        height: 400px;
+        align-items: center;
+        border-radius: 1%;
+    }
 
 .section_3_Home {
     width: 100%;
     grid-area: s3H;
     background-size: 100%;
-    background-image: image()
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
+  #Grishaverse_nyhet_img {
+        position: absolute;
+        display: flex;
+        justify-content: space-around;
+        width: 270px;
+        height: 400px;
+        align-items: center;
+        border-radius: 1%;
+    }
+.section_4_Home {
+    width: 100%;
+    grid-area: s4H;
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+  #RingsOfPower_nyhet_img {
+        position: absolute;
+        display: flex;
+        justify-content: space-around;
+        width: 270px;
+        height: 400px;
+        align-items: center;
+        border-radius: 1%;
+    }
+
+.section_5_Home {
+    width: 100%;
+    height: 100%;
+    grid-area: s5H;
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: -1;
+    
+}
+    #title_1_home{
+        text-decoration: snow;
+        color: rgb(255, 255, 255);
+        letter-spacing: 0.4rem;
+        font-weight: bold;
+        font-size: 1.25rem;
+        position: absolute;
+        top: 5%;
+        left: 0;
+        bottom: 5%;
+
+    }
+    .paragraph_1_Home { 
+        font-size: 0.9rem ;
+        letter-spacing: 0.1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        width: 80%;
+        
+    }
+
+.section_6_Home {
+    width: 100%;
+    height: 100%;
+    grid-area: s6H;
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+}
+    #title_2_home{
+        text-decoration: snow;
+        color: rgb(255, 255, 255);
+        letter-spacing: 0.4rem;
+        font-weight: bold;
+        font-size: 1.25rem;
+        position: absolute;
+        top: 5%;
+        left: 0;
+        bottom: 5%;
+
+    }
+    .paragraph_2_Home { 
+        font-size: 0.9rem ;
+        letter-spacing: 0.1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        width: 80%;
+        
+    }
+
+.section_7_Home {
+    width: 100%;
+    height: 100%;
+    grid-area: s7H;
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+    #title_3_home{
+        text-decoration: snow;
+        color: rgb(255, 255, 255);
+        letter-spacing: 0.4rem;
+        font-weight: bold;
+        font-size: 1.25rem;
+        position: absolute;
+        top: 5%;
+        left: 0;
+        bottom: 5%;
+
+    }
+    .paragraph_3_Home { 
+        font-size: 0.9rem ;
+        letter-spacing: 0.1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        width: 80%;
+        
+    }
+
+.section_8_Home {
+    width: 100%;
+    height: 100%;
+    grid-area: s8H;
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+    #title_4_home{
+        text-decoration: snow;
+        color: rgb(255, 255, 255);
+        letter-spacing: 0.4rem;
+        font-weight: bold;
+        font-size: 1.25rem;
+        position: absolute;
+        top: 5%;
+        left: 0;
+        bottom: 5%;
+
+    }
+    .paragraph_4_Home { 
+        font-size: 0.9rem ;
+        letter-spacing: 0.1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        width: 80%;
+        
+    }
 
 .GridWrapper_about {
 
